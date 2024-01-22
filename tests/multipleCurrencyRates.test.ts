@@ -1,6 +1,6 @@
 import {test} from '../framework/fixture/basePagesFixtures';
 
-test.describe("Multiple currency rates Validation Test", async () => {
+test.describe("Multiple currency rates Validation Tests", async () => {
   test.beforeEach('Open the browser and validate the title of XE Currency Converter website',async ({currencyConverterPage}) => {
     await currencyConverterPage.gotoCurrencyConverterWebsite();
   });
