@@ -5,7 +5,7 @@ test.describe("Multiple currency rates Validation Test", async () => {
     await currencyConverterPage.gotoCurrencyConverterWebsite();
   });
 
-  test.only('Select Euro to GB currency and Validate the expected text',async ({currencyConverterPage}) => {
+  test('Select Euro to GB currency and Validate the expected text',async ({currencyConverterPage}) => {
       await currencyConverterPage.clickAcceptCookies();
       await currencyConverterPage.enterAmountValue();
       await currencyConverterPage.selectCurrencyValueAtFromField();
