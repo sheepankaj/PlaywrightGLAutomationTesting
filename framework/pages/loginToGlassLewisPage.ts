@@ -2,7 +2,6 @@ import { Page, expect } from "@playwright/test";
 import TestBase from "../common/testBase";
 import * as data from "../common/data/data.json";
 
-
 export default class LoginToGlassLewisPage extends TestBase {
     testBase: TestBase;
 

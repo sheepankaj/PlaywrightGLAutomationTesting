@@ -21,8 +21,8 @@ export default class TestBase {
     };
 
     /**
-     * 
-     * @param locator Press the button with the given selector.
+     * Press the button with the given selector.
+     * @param locator 
      */
     public async clickElement(locator: string) {
         await this.page.waitForSelector(locator);

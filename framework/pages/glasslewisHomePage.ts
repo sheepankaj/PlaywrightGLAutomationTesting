@@ -17,7 +17,7 @@ export default class GlassLewisHomePgae extends TestBase{
      */
     public async gotoGlassLewisWebsite() {
         await this.page.goto(data.baseURLforGlassLewisWebsite);
-        // Expect a title "to contain" a substring.
+        // Expect a title "to contain" a substring value.
         await this.testBase.assertPageTitle(/Glass Lewis - Proxy Voting/);
     };
 

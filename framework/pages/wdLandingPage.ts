@@ -32,8 +32,7 @@ export default class WDLandingPage extends TestBase{
         await this.page.waitForTimeout(1000);
         const resultTable = await this.page.locator("//div[@class='k-grid-content k-auto-scrollable']");
         expect(resultTable).toContainText(countyValue);
-        console.log(`The table has only expected country value: ${countyValue}.`)
-        
+        console.log(`The table has only expected country value: ${countyValue}.`)     
     };
 
     /**
@@ -45,8 +44,7 @@ export default class WDLandingPage extends TestBase{
         await this.page.waitForTimeout(1000);
         await this.page.keyboard.press('Enter');
         await this.page.waitForTimeout(1000);
-        await this.testBase.assertTextInPage("#detail-issuer-name",companyName);
-        
+        await this.testBase.assertTextInPage("#detail-issuer-name",companyName);  
     }
 
     /**
