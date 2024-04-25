@@ -1,0 +1,365 @@
+{
+  "config": {
+    "configFile": "/Users/mackbookpankaj/PlaywrightGLAutomationTestingFramework/playwright.config.ts",
+    "rootDir": "/Users/mackbookpankaj/PlaywrightGLAutomationTestingFramework/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/mackbookpankaj/PlaywrightGLAutomationTestingFramework/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/mackbookpankaj/PlaywrightGLAutomationTestingFramework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/mackbookpankaj/PlaywrightGLAutomationTestingFramework/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/mackbookpankaj/PlaywrightGLAutomationTestingFramework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/mackbookpankaj/PlaywrightGLAutomationTestingFramework/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/mackbookpankaj/PlaywrightGLAutomationTestingFramework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.41.1",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "signInValidation.test.ts",
+      "file": "signInValidation.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Sign-In Validation Tests at GlassLewis website",
+          "file": "signInValidation.test.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Validate Sign-In functionality after clicked Login button",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 22716,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Validate the page title as expected: /Glass Lewis - Proxy Voting/\n"
+                        },
+                        {
+                          "text": "Button is clicked at the given locator: #hs-eu-confirmation-button\n"
+                        },
+                        {
+                          "text": "Button is clicked at the given locator: #menu-item-62\n"
+                        },
+                        {
+                          "text": "Validate the page title as expected: /Login Glass Lewis - Glass Lewis/\n"
+                        },
+                        {
+                          "text": "Retrieved Text: Viewpoint Voting Platform Matched with expected text: Viewpoint Voting Platform :found in the given locator: //strong[text()='Viewpoint Voting Platform']\n"
+                        },
+                        {
+                          "text": "Button is clicked at the given locator: text=Log in to Viewpoint\n"
+                        },
+                        {
+                          "text": "The Url of new tab is: https://viewpoint.glasslewis.com/\n"
+                        },
+                        {
+                          "text": "Button is clicked at the given locator: #btn-submit-login\n"
+                        },
+                        {
+                          "text": "Retrieved Text: The fields USERNAME and PASSWORD are required. Matched with expected text: The fields USERNAME and PASSWORD are required. :found in the given locator: text=The fields USERNAME and PASSWORD are required.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-04-25T23:01:41.944Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "587bd643fee889a7dcdb-d3e2426cc357fba78db9",
+              "file": "signInValidation.test.ts",
+              "line": 8,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "wdWebsiteForClientToMakeVote.test.ts",
+      "file": "wdWebsiteForClientToMakeVote.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Validating Web Disclosure (WD) is a public site where our clients can make their votes public.",
+          "file": "wdWebsiteForClientToMakeVote.test.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Filter Belgium Country and validate the grid displays all meetings that are associated with it",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 14402,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Validate the page title as expected: /Sample Disclosure/\n"
+                        },
+                        {
+                          "text": "Search filter locator found and search value typed too\n"
+                        },
+                        {
+                          "text": "Searched value matched as expected: Belgium at the given locator: (//label[@class='ccb'])[3].\n"
+                        },
+                        {
+                          "text": "Button is clicked at the given locator: (//button[@id='btn-update'])[2]\n"
+                        },
+                        {
+                          "text": "The table has only expected country value: Belgium.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-04-25T23:01:41.946Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c552731c51d4b4b467dc-463ee2b6e391a2de59c8",
+              "file": "wdWebsiteForClientToMakeVote.test.ts",
+              "line": 8,
+              "column": 9
+            },
+            {
+              "title": "Validate when user clicks a hyperlink of company name and land on the respective company voting page",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "failed",
+                      "duration": 13021,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Aedifica NV\"\u001b[39m\nReceived string:    \u001b[31m\"\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Aedifica NV\"\u001b[39m\nReceived string:    \u001b[31m\"\"\u001b[39m\n    at TestBase.assertTextInPage (/Users/mackbookpankaj/PlaywrightGLAutomationTestingFramework/framework/common/testBase.ts:41:22)\n    at WDLandingPage.ClickCompanyNameHyperLink (/Users/mackbookpankaj/PlaywrightGLAutomationTestingFramework/framework/pages/WDLandingPage.ts:59:9)\n    at /Users/mackbookpankaj/PlaywrightGLAutomationTestingFramework/tests/wdWebsiteForClientToMakeVote.test.ts:14:9",
+                        "location": {
+                          "file": "/Users/mackbookpankaj/PlaywrightGLAutomationTestingFramework/framework/common/testBase.ts",
+                          "column": 22,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../framework/common/testBase.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 40 |\u001b[39m         \u001b[36mconst\u001b[39m text \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mtextContent(locator)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m         expect(text)\u001b[33m.\u001b[39mtoContain(expectedText)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 42 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m\"Retrieved Text: \"\u001b[39m \u001b[33m+\u001b[39m text \u001b[33m+\u001b[39m \u001b[32m\" Matched with expected text: \"\u001b[39m \u001b[33m+\u001b[39m expectedText \u001b[33m+\u001b[39m \u001b[32m\" :found in the given locator: \"\u001b[39m \u001b[33m+\u001b[39m locator)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 43 |\u001b[39m     }\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 44 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/mackbookpankaj/PlaywrightGLAutomationTestingFramework/framework/common/testBase.ts",
+                            "column": 22,
+                            "line": 41
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Aedifica NV\"\u001b[39m\nReceived string:    \u001b[31m\"\"\u001b[39m\n\n\u001b[90m   at \u001b[39m../framework/common/testBase.ts:41\n\n\u001b[0m \u001b[90m 39 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 40 |\u001b[39m         \u001b[36mconst\u001b[39m text \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mtextContent(locator)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m         expect(text)\u001b[33m.\u001b[39mtoContain(expectedText)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 42 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m\"Retrieved Text: \"\u001b[39m \u001b[33m+\u001b[39m text \u001b[33m+\u001b[39m \u001b[32m\" Matched with expected text: \"\u001b[39m \u001b[33m+\u001b[39m expectedText \u001b[33m+\u001b[39m \u001b[32m\" :found in the given locator: \"\u001b[39m \u001b[33m+\u001b[39m locator)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 43 |\u001b[39m     }\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 44 |\u001b[39m\u001b[0m\n\n\u001b[2m    at TestBase.assertTextInPage (/Users/mackbookpankaj/PlaywrightGLAutomationTestingFramework/framework/common/testBase.ts:41:22)\u001b[22m\n\u001b[2m    at WDLandingPage.ClickCompanyNameHyperLink (/Users/mackbookpankaj/PlaywrightGLAutomationTestingFramework/framework/pages/WDLandingPage.ts:59:9)\u001b[22m\n\u001b[2m    at /Users/mackbookpankaj/PlaywrightGLAutomationTestingFramework/tests/wdWebsiteForClientToMakeVote.test.ts:14:9\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Validate the page title as expected: /Sample Disclosure/\n"
+                        },
+                        {
+                          "text": "Search filter locator found and search value typed too\n"
+                        },
+                        {
+                          "text": "Searched value matched as expected: Belgium at the given locator: (//label[@class='ccb'])[3].\n"
+                        },
+                        {
+                          "text": "Button is clicked at the given locator: (//button[@id='btn-update'])[2]\n"
+                        },
+                        {
+                          "text": "The table has only expected country value: Belgium.\n"
+                        },
+                        {
+                          "text": "Button is clicked at the given locator: //a[contains(text(),'Aedifica NV')]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-04-25T23:01:58.204Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/mackbookpankaj/PlaywrightGLAutomationTestingFramework/test-results/wdWebsiteForClientToMakeVote-Validating-Web-Di-eda92--and-land-on-the-respective-company-voting-page-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/mackbookpankaj/PlaywrightGLAutomationTestingFramework/test-results/wdWebsiteForClientToMakeVote-Validating-Web-Di-eda92--and-land-on-the-respective-company-voting-page-chromium/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/mackbookpankaj/PlaywrightGLAutomationTestingFramework/framework/common/testBase.ts",
+                        "column": 22,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c552731c51d4b4b467dc-138b86b906cc01ecb851",
+              "file": "wdWebsiteForClientToMakeVote.test.ts",
+              "line": 12,
+              "column": 9
+            },
+            {
+              "title": "Validate when user search the company-Activision Blizzard Inc and it lands at the “Activision Blizzard Inc.” vote card page.",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 10391,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Validate the page title as expected: /Sample Disclosure/\n"
+                        },
+                        {
+                          "text": "Retrieved Text: Activision Blizzard Inc Matched with expected text: Activision Blizzard Inc :found in the given locator: #detail-issuer-name\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-04-25T23:02:06.511Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c552731c51d4b4b467dc-2c635ae5ff056c6e40ca",
+              "file": "wdWebsiteForClientToMakeVote.test.ts",
+              "line": 18,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-04-25T23:01:41.179Z",
+    "duration": 35898.583999999995,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

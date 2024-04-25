@@ -1,3 +1,6 @@
 {
-    "baseURLforCurrencyConverterWebsite": "https://www.xe.com/currencyconverter/"
+    "baseURLforGlassLewisWebsite": "https://www.glasslewis.com/",
+    "viewpointVotingURL": "https://viewpoint.glasslewis.com/",
+    "wdLandingpageUrl": "https://viewpoint.glasslewis.com/WD/?siteId=DemoClient"
+
 }
