@@ -27,7 +27,7 @@ export default class GlassLewisHomePgae extends TestBase{
     public async clickAcceptCookies()
     {
         await this.testBase.clickElement("#hs-eu-confirmation-button");
-    }
+    };
 
     /***
      * Click Login button and validate the login page title is displaying
@@ -36,5 +36,5 @@ export default class GlassLewisHomePgae extends TestBase{
     {
         await this.testBase.clickElement(this.loginButton);
         await this.testBase.assertPageTitle(/Login Glass Lewis - Glass Lewis/);
-    }    
+    };  
 }

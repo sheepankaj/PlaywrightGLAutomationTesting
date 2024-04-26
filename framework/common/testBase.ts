@@ -58,5 +58,4 @@ export default class TestBase {
         expect(typeSearchValue).toContain(typeText);
         console.log("Searched value matched as expected: " + typeSearchValue + " at the given locator: " + promptResultSectionLocator + ".");
     };
-
 }

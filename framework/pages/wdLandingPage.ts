@@ -45,7 +45,7 @@ export default class WDLandingPage extends TestBase{
         await this.page.keyboard.press('Enter');
         await this.page.waitForTimeout(1000);
         await this.testBase.assertTextInPage("#detail-issuer-name",companyName);  
-    }
+    };
 
     /**
      * Click the hyperlink from the country result table and validate it landed in the respective comoany voting page.
@@ -55,5 +55,5 @@ export default class WDLandingPage extends TestBase{
     {
         await this.testBase.clickElement(`//a[contains(text(),'${hyperlinkCompanyNameFromColumn}')]`);
         await this.testBase.assertTextInPage("#detail-issuer-name",hyperlinkCompanyNameFromColumn);
-    }
+    };
 }
