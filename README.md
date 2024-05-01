@@ -1,4 +1,4 @@
-# Playwright Automation Tetsing for Glass Lewis website.
+# Playwright Automation Testing for Glass Lewis website.
 ## Dependencies:
 > 1. IDE used: Visual Studio Code
 > 2. npm needs to install
