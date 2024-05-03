@@ -29,10 +29,25 @@ export default class WDLandingPage extends TestBase{
         await this.testBase.TypeInTheSearchField("#txt-multiselect-static-search-CountryFilter",countyValue,"(//label[@class='ccb'])[3]");
         await this.page.locator('#Belgium-cb-label-CountryFilter').check();
         await this.testBase.clickElement("(//button[@id='btn-update'])[2]");
-        await this.page.waitForTimeout(1000);
-        const resultTable = await this.page.locator("//div[@class='k-grid-content k-auto-scrollable']");
-        expect(resultTable).toContainText(countyValue);
-        console.log(`The table has only expected country value: ${countyValue}.`)     
+
+        //this.waitforElement("//div[@id='loading-gif']");
+        await this.page.waitForTimeout(5000);
+
+        const eachRows = await this.page.locator("//div[@class='k-grid-content k-auto-scrollable']//tr").elementHandles();
+        //verify that all rows in the table are associated with the filtered country
+        for(const row of eachRows) {
+            const eachRowCellOfCountryColumn = await row.$("//td[5]"); // Select the fifth cell in each row using xpath
+            if(eachRowCellOfCountryColumn){
+                const eachRowCellOfCountryColumnText = await eachRowCellOfCountryColumn.textContent();
+                expect(eachRowCellOfCountryColumnText).toEqual(countyValue);
+                console.log("Retrieved Text: " + eachRowCellOfCountryColumnText + " Matched with expected text: " + countyValue + " :found in the given locator: " + eachRows)
+            }else{
+                throw new Error(`No ${eachRowCellOfCountryColumn} found the expected ${countyValue} in row`);
+            }
+        }
+        console.log(`All rows are associated with ${countyValue}`);
+        return true;
+
     };
 
     /**
@@ -40,7 +55,7 @@ export default class WDLandingPage extends TestBase{
      * @param companyName 
      */
     public async searchCompanyName(companyName: string){
-        await this.page.fill("#kendo-Search-for-company", companyName,);
+        await this.page.fill("#kendo-Search-for-company", companyName);
         await this.page.waitForTimeout(1000);
         await this.page.keyboard.press('Enter');
         await this.page.waitForTimeout(1000);
