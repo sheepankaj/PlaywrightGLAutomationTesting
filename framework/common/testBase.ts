@@ -53,9 +53,26 @@ export default class TestBase {
         await this.page.fill(searchLocator, typeSearchValue);
         console.log("Search filter locator found and search value typed too");
         await this.page.keyboard.press('Enter');
-        await this.page.waitForTimeout(1500);
+        const slowExpect = expect.configure({ timeout: 10000 });
         const typeText = await this.page.textContent(promptResultSectionLocator);
-        expect(typeSearchValue).toContain(typeText);
+        slowExpect(typeSearchValue).toContain(typeText);
         console.log("Searched value matched as expected: " + typeSearchValue + " at the given locator: " + promptResultSectionLocator + ".");
     };
+
+    /**
+     * Waiting method with polling for validating expected success response status
+     * @param responseUrl 
+     */
+    public async WaitPollingMethod(responseUrl: string){
+        await expect.poll(async () => {
+            const response = await this.page.request.get(responseUrl);
+            return response.status();
+          }, {
+            // Probe, wait 1s, probe, wait 2s, probe, wait 10s, probe, wait 10s, probe
+            // ... Defaults to [100, 250, 500, 1000].
+            intervals: [1_000, 2_000, 10_000],
+            timeout: 60_000
+          }).toBe(200);
+    };
+
 }

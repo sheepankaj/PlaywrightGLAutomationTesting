@@ -15,6 +15,6 @@ test.describe("Validating Web Disclosure (WD) is a public site where our clients
     });
 
     test('Validate when user search the company-Activision Blizzard Inc and it lands at the “Activision Blizzard Inc.” vote card page.',async({wdLandingPage}) =>{
-        await wdLandingPage.searchCompanyName("Activision Blizzard Inc");
+        await wdLandingPage.searchCompanyName("Activision Blizzard Inc","Activision Blizzard Inc - United States","https://viewpoint.glasslewis.com/WD/MeetingDetail/?siteId=DemoClient&securityId=17453");
     });
 })

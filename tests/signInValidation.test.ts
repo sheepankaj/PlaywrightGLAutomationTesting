@@ -6,7 +6,7 @@ test.describe("Sign-In Validation Tests at GlassLewis website", async () => {
   });
 
   test('Validate Sign-In functionality after clicked Login button', async ({ glasslewisHomePage, loginToGlassLewisPage }) => {
-    await glasslewisHomePage.clickAcceptCookies();
+    //await glasslewisHomePage.clickAcceptCookies();
     await glasslewisHomePage.clickLoginButton();
     
     const newLoginPage = await loginToGlassLewisPage.ClickLoginToViewpointAndHandleNewOpenTab();
